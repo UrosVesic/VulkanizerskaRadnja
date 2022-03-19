@@ -1,6 +1,5 @@
 package auto_radnja.gume;
 
-import javax.swing.JTextField;
 
 /**
  * Predstavlja automobilsku gumu koja ima marku, precnik, sirinu i visinu
