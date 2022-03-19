@@ -34,10 +34,10 @@ public class AutoGuma {
 	
 	/**
 	 * 
-	 * @param markaModel - nova marka i model
-	 * @param precnik - novi precnik
-	 * @param sirina - nova sirina
-	 * @param visina - nova visina
+	 * @param markaModel  nova marka i model
+	 * @param precnik  novi precnik
+	 * @param sirina  nova sirina
+	 * @param visina  nova visina
 	 */
 	public AutoGuma(String markaModel, int precnik, int sirina, int visina) {
 		super();
@@ -49,7 +49,7 @@ public class AutoGuma {
 	
 	/**
 	 * Vraca marku i model gume
-	 * @return String 
+	 * @return marku i model automobilske gume kao String
 	 */
 	public String getMarkaModel() {
 		return markaModel;
@@ -71,8 +71,8 @@ public class AutoGuma {
 	}
 	
 	/**
-	 * Vraca precnik gume
-	 * @return int - precnik gume
+	 * Vraca precnik gume u incima
+	 * @return precnik gume kao integer
 	 */
 	public int getPrecnik() {
 		return precnik;
@@ -90,8 +90,8 @@ public class AutoGuma {
 	}
 	
 	/**
-	 * Vraca sirinu gume
-	 * @return int - sirina gume
+	 * Vraca sirinu gume u mm
+	 * @return sirinu gume kao integer
 	 */
 	public int getSirina() {
 		return sirina;
@@ -109,8 +109,8 @@ public class AutoGuma {
 	}
 	
 	/**
-	 * Vraca visinu gume
-	 * @return int - visina gume
+	 * Vraca visinu gume u mm
+	 * @return int - visina gume kao integer
 	 */
 	public int getVisina() {
 		return visina;
