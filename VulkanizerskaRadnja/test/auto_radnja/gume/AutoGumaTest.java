@@ -66,15 +66,15 @@ class AutoGumaTest {
 	@ParameterizedTest
 	@CsvSource({ "25", "35", "45", "46","57", "68", "79", "85","95" })
 	void testSetVisina(int visina) {
-		ag.setPrecnik(visina);
-		assertEquals(visina, ag.getPrecnik());
+		ag.setVisina(visina);
+		assertEquals(visina, ag.getVisina());
 	}
 	
 	@ParameterizedTest
 	@CsvSource({ "135", "145", "155", "165","175", "185", "195", "205","215","225" })
 	void testSetSirina(int sirina) {
-		ag.setPrecnik(sirina);
-		assertEquals(sirina, ag.getPrecnik());
+		ag.setSirina(sirina);
+		assertEquals(sirina, ag.getSirina());
 	}
 	
 	@Test
