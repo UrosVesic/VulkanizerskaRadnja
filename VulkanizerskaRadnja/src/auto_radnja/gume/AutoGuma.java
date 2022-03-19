@@ -18,11 +18,11 @@ public class AutoGuma {
 	 */
 	private int precnik = -1;
 	/**
-	 * Sirina gume u cm
+	 * Sirina gume u mm
 	 */
 	private int sirina = -1;
 	/**
-	 * Visina gume u cm
+	 * Visina gume u mm
 	 */
 	private int visina = -1;
 
@@ -85,7 +85,7 @@ public class AutoGuma {
 	 * @throws IllegalArgumentException ako je precik manji od 13 ili veci od 22
 	 */
 	public void setPrecnik(int precnik) {
-		if (precnik < 13 || precnik > 22)
+		if (precnik < 13 && precnik > 22)
 			throw new IllegalArgumentException("Precnik van opsega");
 		this.precnik = precnik;
 	}
