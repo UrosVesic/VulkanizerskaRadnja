@@ -56,7 +56,7 @@ abstract class RadnjaTest {
 		AutoGuma ag2 = new AutoGuma("Michelin Alpin 6", 17, 220, 60);
 		radnja.dodajGumu(ag2);
 		
-		List<AutoGuma> lista = radnja.pronadjiGumu("Michelin Alipin 6");
+		List<AutoGuma> lista = radnja.pronadjiGumu("Michelin Alpin 6");
 		
 		assertEquals(1, lista.size());
 		assertTrue(lista.contains(ag2));
@@ -73,7 +73,7 @@ abstract class RadnjaTest {
 		AutoGuma ag3 = new AutoGuma("Michelin Alpin 6", 18, 230, 60);
 		radnja.dodajGumu(ag3);
 		
-		List<AutoGuma> lista = radnja.pronadjiGumu("Michelin Alipin 6");
+		List<AutoGuma> lista = radnja.pronadjiGumu("Michelin Alpin 6");
 		
 		assertEquals(2, lista.size());
 		assertTrue(lista.contains(ag2));
@@ -90,7 +90,7 @@ abstract class RadnjaTest {
 		AutoGuma ag = new AutoGuma("Michelin Alpin 5", 16, 200, 50);
 		radnja.dodajGumu(ag);
 		
-		assertEquals(0, radnja.pronadjiGumu("Michelin Alpin 6"));
+		assertEquals(0, radnja.pronadjiGumu("Michelin Alpin 6").size());
 	}
 	
 	@Test
