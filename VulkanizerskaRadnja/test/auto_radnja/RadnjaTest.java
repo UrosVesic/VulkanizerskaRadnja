@@ -86,6 +86,14 @@ class RadnjaTest {
 	}
 	
 	@Test
+	void testPronadjiNijedanRezultat() {
+		AutoGuma ag = new AutoGuma("Michelin Alpin 5", 16, 200, 50);
+		radnja.dodajGumu(ag);
+		
+		assertEquals(0, radnja.pronadjiGumu("Michelin Alpin 6"));
+	}
+	
+	@Test
 	void testVratiSveGume() {
 		AutoGuma ag = new AutoGuma("Michelin Alpin 5", 16, 200, 50);
 		radnja.dodajGumu(ag);
