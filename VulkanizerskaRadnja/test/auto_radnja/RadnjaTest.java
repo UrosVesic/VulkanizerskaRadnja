@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import auto_radnja.gume.AutoGuma;
 
-class RadnjaTest {
+abstract class RadnjaTest {
 
 	protected Radnja radnja;
 
