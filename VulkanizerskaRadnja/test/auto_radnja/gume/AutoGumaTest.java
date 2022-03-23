@@ -79,10 +79,13 @@ class AutoGumaTest {
 		assertEquals(sirina, ag.getSirina());
 	}
 	
+	
+	
 	@Test
 	void testSetPrecnikVanOpsega() {
 		assertThrows(IllegalArgumentException.class, ()->ag.setPrecnik(10));
 	}
+	
 	
 	@Test
 	void testSetSirinaVanOpsega() {
@@ -93,6 +96,8 @@ class AutoGumaTest {
 	void testSetVisinaVanOpsega() {
 		assertThrows(IllegalArgumentException.class, ()->ag.setSirina(105));
 	}
+	
+	
 	@Test
 	void testToString() {
 		ag.setMarkaModel("Michelin Alpin5");
@@ -145,9 +150,25 @@ class AutoGumaTest {
 	}
 	
 	@Test
-	void testEquals2() {
+	void testEqualsIstiObjekti() {
 		AutoGuma ag2 = ag;
 		assertEquals(true, ag.equals(ag2));
+	}
+	
+	@Test
+	void testEqualsNullParametar() {
+		assertEquals(false, ag.equals(null));
+	}
+	
+	@Test
+	void testEqualsRazliciteKlaseObjekata() {
+		assertEquals(false, ag.equals(new Object()));
+	}
+	
+	@Test
+	void testEqualsMarkaModelNullKodJednogObjekta() {
+		AutoGuma ag2 = new AutoGuma("Michelin Alpin 5", 16, 200, 80);
+		assertEquals(false, ag.equals(ag2));
 	}
 	
 	
